@@ -7,8 +7,12 @@ class Price
 		@value = value
 	end
 
-	def square
-		@value *@value		
+	def method_missing(input)
+		self.checkMethod(input.to_s)
+	end
+
+	def tax
+		@value * 0.16
 	end
 
 

@@ -1,8 +1,6 @@
 module NoMethod
-	def checkMethod
-		input = gets.chomp
-		arr = input.split(".")
-		method = arr[1].to_sym
+	def checkMethod(input)
+		method = input
 		present = Price.method_defined? method
 
 		method.to_s
