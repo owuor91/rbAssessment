@@ -1,4 +1,8 @@
+require_relative 'exception.rb'
 class Price
+
+	include NoMethod
+
 	def initialize(value)
 		@value = value
 	end
@@ -7,13 +11,8 @@ class Price
 		@value *@value		
 	end
 
-	def tax
-		@value * 0.16 
-	end
+
+
 end
 
 
-  num= Price.new(100)
-p num.square
-
-p num.tax
