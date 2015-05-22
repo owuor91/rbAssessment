@@ -20,3 +20,4 @@ class Price
 end
 
 
+p bei = Price.new(420)

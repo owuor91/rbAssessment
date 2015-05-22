@@ -7,7 +7,8 @@ module NoMethod
 
 		if present == false
 			puts "Method #{method} is undefined"
-			puts "Please define what #{method} should do and end with a newline"
+			puts "Please define what #{method} should do. delimit lines with a semicolon"
+			
 			userCode = gets
 					
 			Price.send(:define_method, "#{method}")do
